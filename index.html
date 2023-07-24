@@ -3,6 +3,8 @@
 <head>
   <title>Zoomable Non-Overlapping Bubble Chart with D3.js</title>
   <style>
+	
+
     html, body {
       margin: 0;
       padding: 0;
@@ -37,17 +39,28 @@
   </style>
   <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
+<body style="background-image:url(b_background/sunset_blurred.jpg)">
+
+</body>
+
 <body>
+	
+	
   <div id="chart-container">
     <h1 id="chart-title">We are AHC</h1>
   </div>
 
   <script>
     const dataset = [
-      { id: 1, radius: 15, logoUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4a/STAWAG_Logo.svg" }, // Replace "path/to/logo1.svg" with your SVG logo path
-      { id: 2, radius: 25, logoUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4a/STAWAG_Logo.svg" }, // Replace "path/to/logo2.svg" with your SVG logo path
-      { id: 3, radius: 50, logoUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4a/STAWAG_Logo.svg" }, // Replace "path/to/logo3.svg" with your SVG logo path
-      // Add more data points as needed
+      { id: 1, radius: 120, logoUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4a/STAWAG_Logo.svg" }, 
+      { id: 2, radius: 85, logoUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4a/STAWAG_Logo.svg" }, 
+      { id: 3, radius: 60, logoUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4a/STAWAG_Logo.svg" },
+	  { id: 4, radius: 42, logoUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4a/STAWAG_Logo.svg" },
+	  { id: 5, radius: 30, logoUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4a/STAWAG_Logo.svg" },
+	  { id: 6, radius: 22, logoUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4a/STAWAG_Logo.svg" },
+	  { id: 7, radius: 15, logoUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4a/STAWAG_Logo.svg" },
+      // 1: Hauptsponsor, 2: 7m, 3: KE, 4: LE, 5: Deluxe Supporter, 6: Premium Supporter, 7: Basic Supporter
+	  // Add more data points as needed
     ];
 
     const width = window.innerWidth;
